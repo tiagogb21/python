@@ -1,5 +1,8 @@
 # Adivinhe o número:
 
+100 Days of Code: The Complete Python Pro Bootcamp for 2022
+Dra Angela Yu
+
 Objetivo: treinar conceitos de Python associados com a web.
 
 O jogo pode ser jogado no browser, basta colocar um numero de 0 a 10 no final da url
