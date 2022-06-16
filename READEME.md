@@ -1,3 +1,5 @@
+# Adivinhe o número:
+
 Esse é um projeto que pede para o usuário escolher um número.
 
 Caso o número seja menor, retorna o número é menor e é mostrada a imagem de um cachorro.

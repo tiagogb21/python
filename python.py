@@ -11,7 +11,8 @@ def hello():
 
 
 @app.route('/user/<username>')
-# para poder usar o parâmetro da url, precisamos passar um parâmetro para a função
+# Para usar o parâmetro da url,
+# precisa passar um parâmetro para a função
 def show_user_profile(username):
     return 'Welcome, %s' % escape(username)
 
@@ -24,4 +25,4 @@ def show_post(post_id):
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
