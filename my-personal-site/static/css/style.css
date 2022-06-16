@@ -6,13 +6,13 @@
 
 body {
   width: 100vw;
-  height: 100vh;
+  color: #40514e;
+  margin: 0;
+  font-family: "Merriweather", serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  background: lightblue;
+  justify-content: center;
 }
 
 .personal {
@@ -23,4 +23,60 @@ body {
 .skills {
   width: 10vw;
   border-radius: 20%;
+}
+
+.top__container {
+  background-color: #e4f9f5;
+  position: relative;
+  padding-top: 100px;
+  width: 100vw;
+}
+
+.top__cloud {
+  position: absolute;
+  left: 55vw;
+  top: 10vh;
+}
+
+.bottom__cloud {
+  position: absolute;
+  left: 35vw;
+}
+
+.mountain {
+  position: relative;
+  left: 20vw;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  color: blue;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
 }
