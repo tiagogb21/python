@@ -7,7 +7,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return '<h1 style="text-align: center"> Hello! </h1>'
+    return '<h1 style="text-align: center"> Hello! </h1>' \
+        '<p>Take care!</p>' \
+        '<img src="https://media1.giphy.com/media/tsX3YMWYzDPjAARfeg/giphy.gif?cid=ecf05e47a097543c99e9fee7d723e87883089bac3959d79f&rid=giphy.gif&ct=g" alt="dancing bear">'
 
 
 @app.route('/user/<username>')
