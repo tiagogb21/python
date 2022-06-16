@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "<h1>Hello!<h1>"
+    return '<h1 style="text-align: center"> Hello! </h1>'
 
 
 @app.route('/user/<username>')
