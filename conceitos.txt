@@ -1,1 +1,48 @@
-# *args e **kwargs
+ O conteúdo pode ser encontrado aqui:
+ https://medium.com/luizalabs/fun%C3%A7%C3%B5es-em-python-entendendo-par%C3%A2metros-argumentos-args-e-kwargs-4291b1f817f6
+
+*args e **kwargs
+
+ Funções em Python: blocos de código que executam:
+  - uma tarefa; ou
+  - a manipulação de dados.
+
+ obs.: Podem ou não receber: dados de entrada (parâmetros/argumentos).
+
+ Parâmetros: são os nomes dados aos atributos que uma função pode receber.
+ Define quais argumentos são aceitos pela função.
+ 
+ obs.: podem ou não ter um valor padrão (default).
+ obs.: se tiver valor padrão, então podemos ou não passar um argumento para a função.
+    Se não passarmos um argumento. A função utiliza o valor padrão.
+
+ Atenção! Os parâmetros obrigatórios devem ser colocados antes de qualquer parâmetro default (da esquerda para direita).
+
+    SyntaxError: non-default argument follows default argument
+
+ Argumentos: valores passados para uma função.
+
+
+ *args: É usado para passar um lista de argumentos variável SEM palavras-chave em forma de tupla.
+ A função que o recebe não necessariamente saberá quantos argumentos serão passados.
+
+ **kwargs: kwargs significa keyword arguments (argumentos de palavras chave). 
+ Permite passar um dicionário com inúmeras keys para a função.
+
+ def func_missao_dificil(nome, *args, funcao='agente', **kwargs):
+    print(f'Nome do agente: {nome}')
+    print(f'Função: {funcao}')
+    print(args)
+    print(kwargs)
+
+params = {
+            'id_agente': '007',
+            'proxima_missao': 'Impossível'
+         }
+
+func_missao_dificil(
+    'James Bond',
+    'Missao 1',
+    'Missão 2',
+    **params
+)
