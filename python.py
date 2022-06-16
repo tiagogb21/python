@@ -58,5 +58,19 @@ class User:
         self.is_logged_in = False
 
 
+def is_authenticated_decorator(function):
+    def wrapper(*args):
+        if user.is_logged_in == True:
+            function()
+        function()
+    return wrapper
+
+
+@is_authenticated_decorator  # Não vai rodar porque
 def create_blog_post(user):
     print(f"This is {user.name}'s new blog post.")
+
+
+new_user = User("angela")
+
+create_blog_post(new_user)
