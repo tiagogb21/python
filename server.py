@@ -12,18 +12,18 @@ def home():
         '<img src="https://media.giphy.com/media/3o7aCSPqXE5C6T8tBC/giphy.gif" alt="aleatory numbers" />'
 
 
-@app.route('/<int:post_id>')
-def show_post(post_id):
+@app.route('/<int:guss_number>')
+def show_post(guss_number):
     # show the post with the given id, the id is an integer
-    if(post_id < aleatory):
+    if(guss_number < aleatory):
         return '<p> it\'s too low </p><br/>' \
             '<img src="https://media4.giphy.com/media/UohTsyhfrsPFm/giphy.gif?cid=ecf05e47mookkg04aimpbv6oyfs3skb223pnk7ni6ve2llmh&rid=giphy.gif&ct=g" alt="sad dog"/>'
-    if(post_id > aleatory):
+    if(guss_number > aleatory):
         return '<p> it\'s too high </p><br/>' \
             '<img src="https://media1.giphy.com/media/W9gHkIonu8qXI7AC1y/giphy.webp?cid=ecf05e47mookkg04aimpbv6oyfs3skb223pnk7ni6ve2llmh&rid=giphy.webp&ct=g" alt="sad dog">'
-    if(post_id == aleatory):
-        return '<p> You win! </p><br/>' \
-            '<img src = "https://media2.giphy.com/media/tsX3YMWYzDPjAARfeg/giphy.gif?cid=ecf05e47c3f1583047feca6a007f76b306cd90ceb0f2756a&rid=giphy.gif&ct=g" alt="happy bear">'
+    if(guss_number == aleatory):
+        return '<p> You found me! </p><br/>' \
+            '<img src = "https://media.giphy.com/media/4T7e4DmcrP9du/giphy.gif" alt="happy bear">'
 
 
 if __name__ == "__main__":
