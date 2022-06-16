@@ -8,16 +8,19 @@ app = Flask(__name__)
 def make_bold(function):
     def wrapper():
         return "<strong>" + function() + "<strong>"
+    return wrapper
 
 
 def make_emphasis(function):
     def wrapper():
         return "<em>" + function() + "<em>"
+    return wrapper
 
 
 def make_underline(function):
     def wrapper():
         return "<u>" + function() + "<u>"
+    return wrapper
 
 
 @app.route('/')
@@ -47,3 +50,13 @@ def show_post(post_id):
 if __name__ == "__main__":
     # Run the app in debug mode to auto-reload
     app.run(debug=True)
+
+
+class User:
+    def __init__(self, name):
+        self.name = name
+        self.is_logged_in = False
+
+
+def create_blog_post(user):
+    print(f"This is {user.name}'s new blog post.")
