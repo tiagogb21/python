@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background: lightblue;
+}
+
+.personal {
+  width: 10vw;
+  border-radius: 50%;
+}
+
+.skills {
+  width: 10vw;
+  border-radius: 20%;
+}
