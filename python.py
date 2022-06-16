@@ -11,8 +11,8 @@ def hello():
 
 
 @app.route('/user/<username>')
-def welcome():
-    return 'User %s' % escape(username)
+def show_user_profile(username):
+    return 'Welcome, %s' % escape(username)
 
 
 if __name__ == "__main__":
