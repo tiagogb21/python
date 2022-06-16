@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "Hello!"
+    return "<h1>Hello!<h1>"
 
 
 @app.route('/user/<username>')
@@ -25,4 +25,5 @@ def show_post(post_id):
 
 
 if __name__ == "__main__":
+    # Run the app in debug mode to auto-reload
     app.run(debug=True)
