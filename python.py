@@ -5,10 +5,28 @@ from markupsafe import escape
 app = Flask(__name__)
 
 
+def make_bold(function):
+    def wrapper():
+        return "<strong>" + function() + "<strong>"
+
+
+def make_emphasis(function):
+    def wrapper():
+        return "<em>" + function() + "<em>"
+
+
+def make_underline(function):
+    def wrapper():
+        return "<u>" + function() + "<u>"
+
+
 @app.route('/')
+@make_bold
+@make_emphasis
+@make_underline
 def hello():
     return '<h1 style="text-align: center"> Hello! </h1>' \
-        '<p>Take care!</p>' \
+        '<p>Be happy!</p>' \
         '<img src="https://media1.giphy.com/media/tsX3YMWYzDPjAARfeg/giphy.gif?cid=ecf05e47a097543c99e9fee7d723e87883089bac3959d79f&rid=giphy.gif&ct=g" alt="dancing bear">'
 
 
